@@ -1,0 +1,12 @@
+#Desarrolle un programa que declare tres variables. La primera guardará el nombre del estudiante,
+#la segunda el nombre del colegio, la tercera el grado que cursa. Y luego imprima el siguiente 
+#mensaje: “El estudiante xxxx estudia en el yyyy el programa de formación zzzz”
+nombre=(input("nombre del estudiante "))
+colegio=(input("nombre del colegio: "))
+curso=(input("grado que cursa: "))
+print(f"El estudiante {nombre} estudia en el {colegio} el programa de formación {curso}")
+#Linea 4: en esta se define con input y se abren comillas para que la persona pueda ingresar su nombre
+#Linea 5: en esta linea se pide el nombre del colegio
+#linea 6: en esta linea se pide el curso en el que esta la persona
+#linea 7: en esta linea de define con (f) y se dara como resultado utilizando {} 
+#para que al momento de dar el resultado de el nombre, el colegio y el programa de formacion dando fin al algoritmo.
