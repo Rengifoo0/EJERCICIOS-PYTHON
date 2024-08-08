@@ -1,0 +1,9 @@
+nombre=input("digite su nombre: ")
+notaactividadesenclase=int(input("ingrese la calificacion por actividades en clase (0-100): "))
+notaproyectofinal=int(input("ingrese la calificacion por proyecto final:(0-100)"))
+notaevaluacionesparciales=int(input("ingresar la calificacion por evaluaciones: (0-100)"))
+porcentajeactividades = 30
+porcentajeprojectofinal = 50
+porcentajeevaluaciones = 20
+resultado= (notaactividadesenclase*porcentajeactividades/100 + notaproyectofinal*porcentajeprojectofinal/100+ notaevaluacionesparciales*porcentajeevaluaciones/100)
+print(f"la nota final de algoritmia del estudiante {nombre} es {resultado} ")
