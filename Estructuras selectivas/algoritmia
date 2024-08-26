@@ -1,0 +1,10 @@
+nota1=int(input("digite el primer numero: "))
+nota2=int(input("digite el segundo numero: "))
+nota3=int(input("digite el tercer numero: "))
+resultado=(nota1+nota2+nota3)/3
+print(f"el promedio de los numeros ingresados es {resultado} ")
+if resultado>=70:
+    print("EL estudiante aprobo algoritmia con", resultado)
+elif resultado<70:
+     print("el estudiante reprobo algoritmia con ", resultado)
+    

@@ -1,0 +1,59 @@
+# Solicita al usuario el número de zapatillas compradas y convierte la entrada a entero
+zapatillas = int(input("digite el numero de zapatillas compradas "))
+
+# Verifica el número de zapatillas y solicita el costo de cada una según la cantidad comprada
+if zapatillas == 1:
+    # Solicita el costo de la única zapatilla y lo asigna a la variable total
+    zapatilla1 = int(input("digite el costo de la zapatilla "))
+    total = zapatilla1
+elif zapatillas == 2:
+    # Solicita el costo de las dos zapatillas y calcula el total
+    zapatilla1 = int(input("digite el costo de la primera zapatilla "))
+    zapatilla2 = int(input("digite el costo de la segunda zapatilla "))
+    total = zapatilla1 + zapatilla2
+elif zapatillas == 3:
+    # Solicita el costo de las tres zapatillas y calcula el total
+    zapatilla1 = int(input("digite el costo de la primera zapatilla "))
+    zapatilla2 = int(input("digite el costo de la segunda zapatilla "))
+    zapatilla3 = int(input("digite el costo de la tercera zapatilla "))
+    total = zapatilla1 + zapatilla2 + zapatilla3
+elif zapatillas == 4:
+    # Solicita el costo de las cuatro zapatillas y calcula el total
+    zapatilla1 = int(input("digite el costo de la primera zapatilla "))
+    zapatilla2 = int(input("digite el costo de la segunda zapatilla "))
+    zapatilla3 = int(input("digite el costo de la tercera zapatilla "))
+    zapatilla4 = int(input("digite el costo de la cuarta zapatilla "))
+    total = zapatilla1 + zapatilla2 + zapatilla3 + zapatilla4
+elif zapatillas == 5:
+    # Solicita el costo de las cinco zapatillas y calcula el total
+    zapatilla1 = int(input("digite el costo de la primera zapatilla "))
+    zapatilla2 = int(input("digite el costo de la segunda zapatilla "))
+    zapatilla3 = int(input("digite el costo de la tercera zapatilla "))
+    zapatilla4 = int(input("digite el costo de la cuarta zapatilla "))
+    zapatilla5 = int(input("digite el costo de la quinta zapatilla "))
+    total = zapatilla1 + zapatilla2 + zapatilla3 + zapatilla4 + zapatilla5
+else:
+    # Mensaje de error si el número de zapatillas no está en el rango de 1 a 5
+    print("digite otro numero")
+    # Salida temprana del programa, evitando cálculos adicionales si el número no es válido
+    exit()
+
+# Calcula el descuento basado en el número de zapatillas compradas
+if zapatillas >= 3:
+    # Aplica un descuento del 20% si se compraron 3 o más zapatillas
+    descuento = total * 0.20
+else:
+    # Aplica un descuento del 10% si se compraron menos de 3 zapatillas
+    descuento = total * 0.10
+
+# Calcula el total a pagar después de aplicar el descuento
+totalapagar = total - descuento
+
+# Imprime el total a pagar con el descuento aplicado, formateado como texto
+print(f"su total a pagar con el descuento aplicado es {totalapagar}")
+
+# Imprime el total a pagar sin el descuento, formateado como texto
+print(f"su total a pagar sin el descuento era de {total}")
+
+# Imprime el monto del descuento aplicado, formateado como texto
+print(f"su descuento es de {descuento}")

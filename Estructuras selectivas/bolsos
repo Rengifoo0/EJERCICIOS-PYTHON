@@ -1,0 +1,44 @@
+# Solicita al usuario que ingrese el monto total de la compra y lo convierte a tipo float
+montodelaCompra = float(input("La Compra: "))
+
+# Define el porcentaje de inversión propia como 55%
+porcentajeinversionPropia = 0.55
+
+# Define el porcentaje de préstamo bancario como 30%
+porcentajeprestamoBancario = 0.30
+
+# Define el porcentaje de crédito al fabricante como 15%
+porcentajecreditoFabricante = 0.15
+
+# Verifica si el monto de la compra es mayor a 500,000
+if montodelaCompra > 500000:
+    # Calcula la inversión propia como el 55% del monto total de la compra
+    inversion_propia = montodelaCompra * porcentajeinversionPropia
+    
+    # Calcula el préstamo bancario como el 30% del monto total de la compra
+    prestamo_bancario = montodelaCompra * porcentajeprestamoBancario
+    
+    # Calcula el crédito al fabricante como el 15% del monto total de la compra
+    credito_fabricante = montodelaCompra * porcentajecreditoFabricante
+else:
+    # Si el monto de la compra es 500,000 o menos, la inversión propia es igual al monto total
+    inversion_propia = montodelaCompra
+    
+    # No se asigna ningún préstamo bancario
+    prestamo_bancario = 0
+    
+    # No se asigna ningún crédito al fabricante
+    credito_fabricante = 0
+
+# Imprime el monto total de la compra, formateado a dos decimales
+print(f"Monto total de la compra: ${montodelaCompra:.2f}")
+
+# Imprime la inversión propia, formateada a dos decimales y muestra el porcentaje en porcentaje
+print(f"Inversión propia: ${inversion_propia:.2f} ({porcentajeinversionPropia * 100:.0f}%)")
+
+# Imprime el préstamo bancario, formateado a dos decimales y muestra el porcentaje en porcentaje
+print(f"Préstamo bancario: ${prestamo_bancario:.2f} ({porcentajeprestamoBancario * 100:.0f}%)")
+
+# Imprime el crédito al fabricante, formateado a dos decimales y muestra el porcentaje en porcentaje
+print(f"Crédito al fabricante: ${credito_fabricante:.2f} ({porcentajecreditoFabricante * 100:.0f}%)")
+
