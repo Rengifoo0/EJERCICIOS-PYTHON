@@ -1,4 +1,7 @@
-
+#La oficina de tránsito de Ibagué desea saber, de los n autos que entran a la ciudad
+#de Ibagué, cuantos entran con calcomanía de cada color. Conociendo el ultimo
+#dígito de la placa de cada carro, se puede determinar el color de la calcomanía
+#utilizando la siguiente relación:
 #agrego los contadores y le pregunto al usuario el numero de autos
 numeroAutos=int(input("ingrese el numero de autos: "))
 amarilla= 0

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #.un grupo de 23 estudiantes presentan un examen de algoritmia. Hacer un
 #algoritmo que lea por cada estudiante la calificación obtenida. Al finalizar calcule e
 #imprima:
@@ -36,7 +35,6 @@ print(f"{cal50} Estudiantes obtuvieron una calificación menor a 50.")
 print(f"{cal50} Estudiantes obtuvieron una calificación entre 50 y 70.")
 print(f"{calificacion70} Estudiantes obtuvieron una calificación entre 70 y 80.")
 print(f"{calificacion80} Estudiantes obtuvieron una calificación mayor a 80.")
-=======
 # Defino las variables
 cal50 = 0
 calificacion50 = 0
@@ -64,4 +62,4 @@ print(f"{cal50} Estudiantes obtuvieron una calificación menor a 50.")
 print(f"{cal50} Estudiantes obtuvieron una calificación entre 50 y 70.")
 print(f"{calificacion70} Estudiantes obtuvieron una calificación entre 70 y 80.")
 print(f"{calificacion80} Estudiantes obtuvieron una calificación mayor a 80.")
->>>>>>> b69f51a3f1773405aada743e836407afb88f1a9b
+

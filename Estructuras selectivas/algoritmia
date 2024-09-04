@@ -1,10 +1,23 @@
-nota1=int(input("digite el primer numero: "))
-nota2=int(input("digite el segundo numero: "))
-nota3=int(input("digite el tercer numero: "))
-resultado=(nota1+nota2+nota3)/3
+# Solicita al usuario que ingrese el primer número y lo convierte a entero
+nota1 = int(input("digite el primer numero: "))
+
+# Solicita al usuario que ingrese el segundo número y lo convierte a entero
+nota2 = int(input("digite el segundo numero: "))
+
+# Solicita al usuario que ingrese el tercer número y lo convierte a entero
+nota3 = int(input("digite el tercer numero: "))
+
+# Calcula el promedio de los tres números ingresados
+resultado = (nota1 + nota2 + nota3) / 3
+
+# Imprime el promedio de los números ingresados, formateado como texto
 print(f"el promedio de los numeros ingresados es {resultado} ")
-if resultado>=70:
+
+# Verifica si el promedio es mayor o igual a 70
+if resultado >= 70:
+    # Imprime un mensaje indicando que el estudiante aprobó la asignatura
     print("EL estudiante aprobo algoritmia con", resultado)
-elif resultado<70:
-     print("el estudiante reprobo algoritmia con ", resultado)
-    
+else:
+    # Imprime un mensaje indicando que el estudiante no aprobó la asignatura
+    print("el estudiante reprobo algoritmia con", resultado)
+

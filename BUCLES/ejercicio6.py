@@ -1,3 +1,4 @@
+#Calcular la cantidad de hombres y mujeres presentes en un salón de clases con un total de n personas.
 # se escribe los contadores
 numeroPersonas = int(input("Introduce el número total de personas en el salón: "))
 contadorHombres = 0
